@@ -12,8 +12,8 @@ async function init() {
   }
 
   function startServer() {
-    app.get("/", (req, resp) => {
-      return resp.status(200).json({ message: "works!" });
+    app.get("/", (request, response) => {
+      return response.status(200).json({ message: "works!" });
     });
     app.listen(3000);
   }
