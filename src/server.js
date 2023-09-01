@@ -31,9 +31,9 @@ async function init() {
           [title, price],
         );
         const row = resultQuery.rows[0];
-        return response.status(200).json(row);
+        return resp.status(200).json(row);
       } catch (error) {
-        return response.status(400).json(error);
+        return resp.status(400).json(error);
       }
     });
     app.listen(3000);
